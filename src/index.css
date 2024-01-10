@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --background-color: #ffffff;
+}
+.gray {
+  color: #918e9b;
+}
+p {
+  margin: 0;
+}
+/* Media query */
+/* // Small devices (landscape phones, up to 576px) */
+@media (max-width: 576px) {
+  .hero--section img {
+    max-width: 250px;
+  }
+  .hero--section .hero--text p {
+    font-size: 1.2rem;
+    width: 250px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up */
+@media (min-width: 768px) {
+  .hero--section img {
+    max-width: 50%;
+  }
+  .hero--section .hero--text p {
+    font-size: 1.4rem;
+    width: 50%;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .hero--section .hero--text p {
+    font-size: 2rem;
+  }
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/* Start  navpar */
+nav {
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+nav img {
+  height: 30px;
+}
+
+/* Start Hero section */
+.hero--section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.hero--section img {
+  align-self: center;
+}
+.hero--section h2 {
+  font-size: 3rem;
+}
+
+/* Start last section */
+.card-list {
+  margin-top: 200px;
+  display: flex;
+  gap: 50px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  position: relative;
+}
+.card .card--photo {
+  width: 100%;
+  border-radius: 9px;
+}
+.card .card--collection {
+  display: flex;
+  align-items: center;
+}
+.card .card--collection img {
+  width: 14px;
+  height: 14px;
+  margin-right: 2px;
+}
+.card .card--collection p:nth-child(3),
+.card .card--collection p:nth-child(4) {
+  margin-left: 5px;
+}
+.card--title {
+  margin: 5px 0px;
+}
+.card span {
+  font-weight: bold;
+}
+.badge {
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+  position: absolute;
+}
