@@ -3,7 +3,6 @@ import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Card from './components/Card'
 import Data from './components/Data'
-
 const myCards = Data.map((data)=>{
   return <Card 
   key = {data.id}
