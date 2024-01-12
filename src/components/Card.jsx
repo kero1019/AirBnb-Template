@@ -1,7 +1,7 @@
 import React from 'react'
 import Star from '../../public/images/Star.png'
+// import testImg from "../../public/images/photo1.png"
 export default function Card(props){
-    // console.log()
     let showText
     if(props.openSpots === 0 )
     showText = "SOLD OUT"
@@ -10,7 +10,7 @@ export default function Card(props){
     return(
         <div className ="card">
             {showText && <div className="badge">{showText}</div>}
-            <img  className ="card--photo" src={`../../public/images/${props.coverImg}`} alt="hero photo" />
+            <img  className ="card--photo" src={`./images/${props.coverImg}`} alt="hero photo" />
             <div className="card--collection">
                 <img src={Star} alt="star logo" />
                 <p>{props.stats.rating}</p>
